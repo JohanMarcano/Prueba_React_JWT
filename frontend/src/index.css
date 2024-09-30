@@ -1,0 +1,73 @@
+/* Reset CSS básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container, .row, .col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+/* Estilo para las imágenes de las pizzas */
+/*
+.card-pizza-img {
+  width: 350px; // Ajusta el ancho a 350px 
+  height: auto; // Mantiene la proporción original de la imagen 
+  object-fit: cover; //Ajusta la imagen para que cubra el área de 350px sin distorsionarse 
+  margin: 0 auto; //Centra la imagen dentro de su contenedor 
+}
+*/
+
+.contenedorH {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+}
+
+
+.login{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,10 @@
+.card-pizza {
+  width: 18rem; /* Ancho de la tarjeta */
+  margin: 10px; /* Espacio entre las tarjetas */
+}
+
+.card-pizza-img {
+  width: 550px; /* Ancho completo del contenedor de la imagen */
+  height: 100%; /* Altura fija para las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin distorsión */
+}

@@ -1,0 +1,11 @@
+.RegisterPage {
+    height: 60vh; 
+    min-width: 95vw; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; /* Añade un padding para evitar que el contenido se pegue a los bordes */
+  }
+  
