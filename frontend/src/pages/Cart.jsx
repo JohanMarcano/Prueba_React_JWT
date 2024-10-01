@@ -13,16 +13,16 @@ const Cart = () => {
   const [successMessage, setSuccessMessage] = useState(false); // Estado para el mensaje de éxito
 
   const handleCheckout = async () => {
-    if (!token) return;
+    if (!token) return; // Asegurarse de que el usuario está autenticado
 
     try {
       const response = await fetch('http://localhost:3000/api/checkouts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
+          'Authorization': `Bearer ${token}`, // Enviar el token para autenticación
         },
-        body: JSON.stringify({ cart }),
+        body: JSON.stringify({ cart }), // Enviar el carrito en el cuerpo de la solicitud
       });
 
       if (response.ok) {
